@@ -1,0 +1,115 @@
+%menu-dark-theme{
+    .link-principal{
+        color: $color-black-1 !important;
+    }
+
+    .logo svg, .icon-cart svg, .icon-search svg{
+        fill: $color-black-1 !important;
+    }
+
+    .menu-item{
+        h3,a{
+            color: $color-black-1 !important;
+        }
+    }
+}
+
+.menu{
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+
+
+    .logo{
+        display: flex;
+        align-items: center;
+
+        svg{
+            width: 100px;
+            fill: $color-white-1;
+        }
+
+        .link-principal{
+            @include text-1(14px,$color-white-1);
+
+            &::before{
+                content: '|';
+                padding: 0 16px;
+            }
+        } 
+    }
+    .list-menu{
+        display: flex;
+
+        .menu-item{
+            h3,a{
+                display: block;
+                cursor: pointer;
+                padding: 0 15px;
+                @include text-1(14px,$color-white-1);
+                text-transform: uppercase;
+                line-height: 52px;
+                &:hover{
+                }
+            }
+            .icon-search svg{
+                fill: $color-white-1;
+                display: block;
+                padding: 18px 0;
+                height: 16px;
+                width: 16px;
+            }
+            .icon-cart svg{
+                fill: $color-white-1;
+                display: block;
+                padding: 15px 0;
+                height: 22px;
+                width: 22px;
+            }
+        }
+    }
+
+    .submenu{
+        display: none;
+        background-color: $color-white-1;
+        padding: 60px 100px 100px;
+        position: absolute;
+        top: 52px;
+        right: 0;
+        left: 0;
+
+        &.show{
+            display: flex;
+        }
+
+        div{
+            flex: 1;
+            margin: 0 12px;
+            a{
+                display: block;
+                @include text-1(14px, $color-black-1);
+                line-height: 34px;
+            }
+            .submenu-title{
+                @include text-2(14px, $color-black-1);
+                border-bottom: 5px solid $color-white-2;
+                padding-bottom: 18px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    &:hover{
+        background: $color-white-1 !important;
+        @extend %menu-dark-theme;
+    }
+    &.dark-menu{
+        @extend %menu-dark-theme;
+    }
+    
+}

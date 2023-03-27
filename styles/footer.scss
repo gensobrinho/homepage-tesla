@@ -1,0 +1,20 @@
+footer{
+    nav{
+        ul{
+            display: flex;
+            justify-content: center;
+
+            li{
+                padding: 8px 16px 8px 0;
+                a{
+                    @include text-2(12px, $color-black-2);
+                    
+                    &:hover{
+                        color: $color-black-1;
+                    }
+                }
+            }
+        }
+
+    }
+}

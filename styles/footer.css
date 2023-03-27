@@ -1,0 +1,7 @@
+footer nav ul {
+  display: flex;
+  justify-content: center;
+}
+footer nav ul li {
+  padding: 8px 16px 8px 0;
+}/*# sourceMappingURL=footer.css.map */

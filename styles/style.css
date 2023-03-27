@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: #FFF;
+}
+
+main {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.menu.dark-menu .link-principal, .menu:hover .link-principal {
+  color: #000 !important;
+}
+.menu.dark-menu .logo svg, .menu:hover .logo svg, .menu.dark-menu .icon-cart svg, .menu:hover .icon-cart svg, .menu.dark-menu .icon-search svg, .menu:hover .icon-search svg {
+  fill: #000 !important;
+}
+.menu.dark-menu .menu-item h3, .menu:hover .menu-item h3, .menu.dark-menu .menu-item a, .menu:hover .menu-item a {
+  color: #000 !important;
+}
+
+.menu {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.menu .logo {
+  display: flex;
+  align-items: center;
+}
+.menu .logo svg {
+  width: 100px;
+  fill: #FFF;
+}
+.menu .logo .link-principal {
+  font: 400 14px "Roboto", sans-serif;
+  color: #FFF;
+  letter-spacing: 2px;
+}
+.menu .logo .link-principal::before {
+  content: "|";
+  padding: 0 16px;
+}
+.menu .list-menu {
+  display: flex;
+}
+.menu .list-menu .menu-item h3, .menu .list-menu .menu-item a {
+  display: block;
+  cursor: pointer;
+  padding: 0 15px;
+  font: 400 14px "Roboto", sans-serif;
+  color: #FFF;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 52px;
+}
+.menu .list-menu .menu-item .icon-search svg {
+  fill: #FFF;
+  display: block;
+  padding: 18px 0;
+  height: 16px;
+  width: 16px;
+}
+.menu .list-menu .menu-item .icon-cart svg {
+  fill: #FFF;
+  display: block;
+  padding: 15px 0;
+  height: 22px;
+  width: 22px;
+}
+.menu .submenu {
+  display: none;
+  background-color: #FFF;
+  padding: 60px 100px 100px;
+  position: absolute;
+  top: 52px;
+  right: 0;
+  left: 0;
+}
+.menu .submenu.show {
+  display: flex;
+}
+.menu .submenu div {
+  flex: 1;
+  margin: 0 12px;
+}
+.menu .submenu div a {
+  display: block;
+  font: 400 14px "Roboto", sans-serif;
+  color: #000;
+  letter-spacing: 2px;
+  line-height: 34px;
+}
+.menu .submenu div .submenu-title {
+  font: 500 14px "Roboto", sans-serif;
+  color: #000;
+  letter-spacing: 2px;
+  border-bottom: 5px solid #d0d1d2;
+  padding-bottom: 18px;
+  margin-bottom: 30px;
+}
+.menu:hover {
+  background: #FFF !important;
+}
+.content .row {
+  width: 100%;
+  display: flex;
+}
+.content .row .column {
+  padding: 12px 0 0;
+  flex: 1;
+}
+.content .row .column + .column {
+  padding-left: 24px;
+}
+.content .content-area {
+  display: block;
+  position: relative;
+}
+.content .content-area + .content-area {
+  margin-top: 16px;
+}
+.content .content-area img {
+  display: block;
+  width: 100%;
+}
+.content .content-area h3 {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  line-height: 40px;
+  margin-top: -20px;
+  text-align: center;
+  font: 500 24px "Roboto", sans-serif;
+  color: #000;
+  letter-spacing: 2px;
+}
+.content .content-area.text-content-light h3 {
+  color: #FFF;
+}
+.content .content-area.content-top h3 {
+  top: 20%;
+  margin-top: 0;
+}
+.content .content-area.content-left h3 {
+  left: 15%;
+  text-align: left;
+}
+.content .content-area.content-right h3 {
+  right: 15%;
+  text-align: right;
+}
+.content .content-area:hover img {
+  transition: all 0.25s linear;
+  box-shadow: 1px 1px 4px #d0d1d2;
+}
+
+footer nav ul {
+  display: flex;
+  justify-content: center;
+}
+footer nav ul li {
+  padding: 8px 16px 8px 0;
+}
+footer nav ul li a {
+  font: 500 12px "Roboto", sans-serif;
+  color: #393c41;
+  letter-spacing: 2px;
+}
+footer nav ul li a:hover {
+  color: #000;
+}/*# sourceMappingURL=style.css.map */
